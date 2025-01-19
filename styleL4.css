@@ -1,0 +1,89 @@
+body{
+    text-align: center;
+}
+div{
+    /* height: 50px; */
+    /* width: 150px; */
+    border: black solid 2px;
+    display: inline-block;
+    
+}
+    
+
+#contaner{
+    background-color: darkturquoise;
+    height: 400px;
+    width: 1000px;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+    /* align-content: ; flex-start; */
+    
+
+}
+#box1{
+    background-color: blue;
+    flex-grow: 1;
+    
+}
+#box2{
+    background-color: brown;
+    height: 200px;
+    /* flex-shrink: 2; */
+    flex-grow: 2;
+}
+#box3{
+    background-color: chartreuse;
+}
+#box4{
+    background-color: coral;
+    height: 75px;
+}
+#box5{
+    background-color: darkgreen;
+}
+
+.nevbar{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.outer{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.iner{
+    height: 200px;
+    width: 200px;
+    background-image: url(nenshi.jpg);
+    background-size: cover;
+
+}
+@media(width : 600px){
+    #contaner{
+        background-color: blue;
+    }
+}
+@media(min-width:400px) and (max-width:800px){
+    #contaner{
+        background-color: lightsalmon;
+    }
+}

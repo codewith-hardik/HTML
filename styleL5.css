@@ -1,0 +1,74 @@
+.Sister{
+    height: 500px;
+    width: 400px;
+    border: 1px black solid;
+   font-size: 30px;
+    text-align: center;
+    color:indigo;
+    background-image: url(nenshi.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* transition: all 2s ease-in 1s; */
+    /* transform: rotate(360deg); */
+
+    /* animation-name: Animation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+    animation: Animation 2s ease-in-out 1.5s infinite alternate-reverse ;
+}
+@keyframes Animation{
+    0%{
+        left: 0px;
+        background-image: url(nenshi.jpg);
+        background-size: cover;
+    }
+    50%{
+        background-image: url(nidinenshi.jpg);
+        background-size: cover;
+    }
+    100%{
+        left: 1200px;
+        background-image: url(nidi.jpg);
+        background-size: cover;
+    }
+}
+
+/* div:hover{
+    background-image: url(nidi.jpg);
+    background-size: cover;
+    font-size: 40px;
+    rotate: 360deg;
+    transform: skewX(180px);
+
+} */
+/* div:active{
+    background-image: url(nidinenshi.jpg);
+    background-size: cover;
+} */
+
+.lodar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top:500px;
+    left: 150px;
+    border: 5px solid rgb(244, 51, 7);
+    border-top: 5px solid rgb(7, 4, 231);
+    animation: spinAnimate 2s ease-in-out 0s infinite alternate-reverse;
+}
+@keyframes spinAnimate {
+    from{
+        left: 150px;
+        transform: rotate(0deg);
+    }
+    to{
+        left: 1110px;
+        transform: rotate(360deg);
+    }
+}

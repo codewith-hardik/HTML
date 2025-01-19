@@ -1,0 +1,29 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid black ;
+    display: inline-block;
+}
+body{
+    background-image: url(nenshi.jpg);
+    background-size: cover;
+}
+#box1{
+    position: static;
+    background-image: url(nenshi.jpg);
+    background-size: cover;
+
+}
+#box2{
+    position: relative;
+}
+#box3{
+    position: fixed;
+    top: 0px;
+}
+#box4{
+    position: absolute;
+    top: 200px;
+    right: 20px;
+}
